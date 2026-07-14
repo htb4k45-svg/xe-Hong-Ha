@@ -142,7 +142,7 @@ def format_excel_sheet(ws, title, df_headers, start_row=0, merge_title=True):
 # =====================================================================
 # 3. GIẢI NÉN VÀ XÂY DỰNG CACHE TỪ PDF
 # =====================================================================
-def extract_and_build_cache(uploaded_file, temp_dir="temp_invoice_extract"):
+def extract_and_build_cache(uploaded_file, temp_dir="/tmp/temp_invoice_extract"):
     invoice_cache = {}
     if os.path.exists(temp_dir):
         shutil.rmtree(temp_dir, ignore_errors=True)
